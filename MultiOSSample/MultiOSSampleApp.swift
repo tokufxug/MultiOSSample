@@ -11,7 +11,11 @@ import SwiftUI
 struct MultiOSSampleApp: App {
     var body: some Scene {
         WindowGroup {
+            #if os(visionOS)
+            VisionOSContentView()
+            #else
             ContentView()
+            #endif
         }
     }
 }

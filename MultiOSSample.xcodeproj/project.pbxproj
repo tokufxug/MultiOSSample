@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A850B922B4ED10400D2F1A5 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 1A850B912B4ED10400D2F1A5 /* RealityKitContent */; };
+		1A850B922B4ED10400D2F1A5 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; platformFilters = (xros, ); productRef = 1A850B912B4ED10400D2F1A5 /* RealityKitContent */; settings = {ATTRIBUTES = (Required, ); }; };
 		1A850B942B4ED10400D2F1A5 /* MultiOSSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A850B932B4ED10400D2F1A5 /* MultiOSSampleApp.swift */; };
-		1A850B962B4ED10400D2F1A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A850B952B4ED10400D2F1A5 /* ContentView.swift */; };
+		1A850B962B4ED10400D2F1A5 /* VisionOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A850B952B4ED10400D2F1A5 /* VisionOSContentView.swift */; platformFilters = (xros, ); };
 		1A850B982B4ED10600D2F1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A850B972B4ED10600D2F1A5 /* Assets.xcassets */; };
 		1A850B9B2B4ED10600D2F1A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A850B9A2B4ED10600D2F1A5 /* Preview Assets.xcassets */; };
 		1A850BA62B4ED10600D2F1A5 /* MultiOSSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A850BA52B4ED10600D2F1A5 /* MultiOSSampleTests.swift */; };
+		1A850BB02B4ED15700D2F1A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A850BAF2B4ED15700D2F1A5 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +30,13 @@
 		1A850B8C2B4ED10400D2F1A5 /* MultiOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A850B902B4ED10400D2F1A5 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		1A850B932B4ED10400D2F1A5 /* MultiOSSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiOSSampleApp.swift; sourceTree = "<group>"; };
-		1A850B952B4ED10400D2F1A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A850B952B4ED10400D2F1A5 /* VisionOSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSContentView.swift; sourceTree = "<group>"; };
 		1A850B972B4ED10600D2F1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A850B9A2B4ED10600D2F1A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A850B9C2B4ED10600D2F1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A850BA12B4ED10600D2F1A5 /* MultiOSSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiOSSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A850BA52B4ED10600D2F1A5 /* MultiOSSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiOSSampleTests.swift; sourceTree = "<group>"; };
+		1A850BAF2B4ED15700D2F1A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				1A850B932B4ED10400D2F1A5 /* MultiOSSampleApp.swift */,
-				1A850B952B4ED10400D2F1A5 /* ContentView.swift */,
+				1A850B952B4ED10400D2F1A5 /* VisionOSContentView.swift */,
+				1A850BAF2B4ED15700D2F1A5 /* ContentView.swift */,
 				1A850B972B4ED10600D2F1A5 /* Assets.xcassets */,
 				1A850B9C2B4ED10600D2F1A5 /* Info.plist */,
 				1A850B992B4ED10600D2F1A5 /* Preview Content */,
@@ -214,8 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A850B962B4ED10400D2F1A5 /* ContentView.swift in Sources */,
+				1A850B962B4ED10400D2F1A5 /* VisionOSContentView.swift in Sources */,
 				1A850B942B4ED10400D2F1A5 /* MultiOSSampleApp.swift in Sources */,
+				1A850BB02B4ED15700D2F1A5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +373,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +381,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.1planet.multios.sample.app.MultiOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -395,6 +402,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +410,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.1planet.multios.sample.app.MultiOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -421,7 +431,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.1planet.multios.sample.app.MultiOSSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -442,7 +453,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.1planet.multios.sample.app.MultiOSSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
